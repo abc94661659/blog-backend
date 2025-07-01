@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.mapper.CommentMapper">
+
+    <insert id="insertComment">
+        insert into comment (article_id,user_id,content,parent_comment_id,create_time,update_time)
+        values (#{articleId},#{userId},#{content},#{parentCommentId},#{createTime},#{updateTime})
+    </insert>
+
+    <delete id="deleteById">
+        delete from comment where id = #{id}
+    </delete>
+
+    <select id="selectById" resultType="org.example.entity.Comment">
+        select * from comment where id = #{id}
+    </select>
+
+    <delete id="deleteCommentsByArticleId">
+        delete from comment where article_id = #{articleId}
+    </delete>
+
+    <delete id="deleteCommentsByUserId">
+        delete from comment where user_id=#{userId}
+    </delete>
+
+    <delete id="deleteCommentsByParentId">
+        delete from comment where parent_comment_id = #{parentCommentId}
+    </delete>
+
+    <select id="selectCommentsByParentId" resultType="org.example.entity.Comment">
+        select * from comment where parent_comment_id = #{parentCommentId}
+    </select>
+
+    <select id="selectParentCommentsByArticleId" resultType="org.example.entity.Comment">
+        select * from comment where article_id = #{articleId} and parent_comment_id is null
+    </select>
+
+    <select id="searchComments" resultType="org.example.entity.Comment">
+        SELECT * FROM comment
+        WHERE content LIKE CONCAT('%', #{keyword}, '%')
+    </select>
+</mapper>

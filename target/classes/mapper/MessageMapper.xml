@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.mapper.MessageMapper">
+
+    <insert id="insertMessage">
+        insert into message_board(user_id,content) values(#{userId},#{content})
+    </insert>
+
+    <select id="selectAllMessage" resultType="org.example.entity.Message">
+        select * from message_board;
+    </select>
+
+    <select id="replyMessage" >
+        update message_board set reply_content=#{replyContent},reply_time=#{replyTime} where id=#{id}
+    </select>
+
+
+
+    <delete id="deleteByIdMessage">
+        delete from message_board where id=#{id}
+    </delete>
+
+    <delete id="deleteByUserId">
+        delete from message_board where user_id= #{userId}
+    </delete>
+</mapper>

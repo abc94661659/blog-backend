@@ -1,0 +1,35 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog_db
+    username: root
+    password: abc2120669
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  mail:
+    host: smtp.qq.com
+    port: 587
+    username: 946641659@qq.com
+    password: rrcfxsazksmpbeaj
+    default-encoding: UTF-8
+    properties:
+      mail.smtp.auth: true
+      mail.smtp.starttls.enable: true
+      debug: true
+  data:
+    redis:
+      host: localhost
+      port: 6379
+      password: abc2120669
+      database: 0
+  security:
+    user:
+      name: admin
+      password: abc2120669
+
+mybatis:
+  type-aliases-package: com.example.blog.entity  # 实体类包路径
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    #开启驼峰命名
+    map-underscore-to-camel-case: true
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+

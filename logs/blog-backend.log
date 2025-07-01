@@ -1,0 +1,92 @@
+2025-07-01 13:45:20 [restartedMain] INFO  org.example.BlogBackendApplication - Starting BlogBackendApplication using Java 17.0.5 with PID 12280 (E:\Java_study\blog-backend\target\classes started by Linshiyi in E:\Java_study\blog-backend)
+2025-07-01 13:45:20 [restartedMain] INFO  org.example.BlogBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2025-07-01 13:45:20 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-01 13:45:20 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-01 13:45:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-07-01 13:45:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-07-01 13:45:21 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 7 ms. Found 0 Redis repository interfaces.
+2025-07-01 13:45:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-07-01 13:45:22 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-07-01 13:45:22 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-07-01 13:45:22 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-07-01 13:45:22 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-07-01 13:45:22 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1460 ms
+2025-07-01 13:45:22 [restartedMain] INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2025-07-01 13:45:23 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-07-01 13:45:23 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-07-01 13:45:23 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-07-01 13:45:23 [restartedMain] INFO  org.example.BlogBackendApplication - Started BlogBackendApplication in 3.268 seconds (process running for 3.807)
+2025-07-01 13:46:02 [http-nio-8080-exec-3] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-07-01 13:46:02 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-07-01 13:46:02 [http-nio-8080-exec-3] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-07-01 13:46:02 [http-nio-8080-exec-4] INFO  o.example.controller.UserController - 获取管理员信息
+2025-07-01 13:46:02 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-07-01 13:46:02 [http-nio-8080-exec-5] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:02 [http-nio-8080-exec-5] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:03 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@160a1d3e
+2025-07-01 13:46:03 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-07-01 13:46:03 [http-nio-8080-exec-9] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:03 [http-nio-8080-exec-9] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:03 [http-nio-8080-exec-9] INFO  o.e.controller.CategoryController - 查询所有分类
+2025-07-01 13:46:12 [http-nio-8080-exec-10] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-10] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-10] INFO  o.e.controller.CategoryController - 查询所有分类
+2025-07-01 13:46:12 [http-nio-8080-exec-9] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-9] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-10] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-10] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-2] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-2] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-3] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-3] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-6] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-1] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-1] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-6] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-4] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-5] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-4] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-5] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-2] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-8] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-7] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-2] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-8] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-7] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:12 [http-nio-8080-exec-6] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:12 [http-nio-8080-exec-6] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:13 [http-nio-8080-exec-3] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:13 [http-nio-8080-exec-3] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:13 [http-nio-8080-exec-1] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:13 [http-nio-8080-exec-1] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:13 [http-nio-8080-exec-6] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:13 [http-nio-8080-exec-8] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:13 [http-nio-8080-exec-6] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:13 [http-nio-8080-exec-8] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:13 [http-nio-8080-exec-8] INFO  o.example.controller.UserController - 获取用户信息：1
+2025-07-01 13:46:13 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - 获取用户信息：2
+2025-07-01 13:46:13 [http-nio-8080-exec-6] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:13 [http-nio-8080-exec-3] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:13 [http-nio-8080-exec-6] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:13 [http-nio-8080-exec-3] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:13 [http-nio-8080-exec-3] INFO  o.example.controller.UserController - 获取用户信息：2
+2025-07-01 13:46:13 [http-nio-8080-exec-6] INFO  o.example.controller.UserController - 获取用户信息：1
+2025-07-01 13:46:15 [http-nio-8080-exec-1] INFO  org.example.utils.TokenInterceptor - 不用令牌路径，放行
+2025-07-01 13:46:15 [http-nio-8080-exec-1] INFO  o.e.c.AnnouncementsController - 查询所有公告
+2025-07-01 13:46:21 [http-nio-8080-exec-4] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:21 [http-nio-8080-exec-4] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:21 [http-nio-8080-exec-4] INFO  o.e.controller.CategoryController - 查询所有分类
+2025-07-01 13:46:24 [http-nio-8080-exec-7] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:24 [http-nio-8080-exec-7] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:24 [http-nio-8080-exec-7] INFO  o.example.controller.UserController - 获取所有用户
+2025-07-01 13:46:26 [http-nio-8080-exec-5] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:26 [http-nio-8080-exec-5] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:27 [http-nio-8080-exec-3] INFO  org.example.utils.JwtUtils - 解析后的{exp=1751880446, id=1, username=Linshiyi}
+2025-07-01 13:46:27 [http-nio-8080-exec-3] INFO  org.example.utils.TokenInterceptor - 令牌合法,放行
+2025-07-01 13:46:27 [http-nio-8080-exec-3] INFO  o.e.controller.CategoryController - 查询所有分类
+2025-07-01 13:46:29 [http-nio-8080-exec-6] INFO  org.example.utils.TokenInterceptor - 不用令牌路径，放行
+2025-07-01 13:46:29 [http-nio-8080-exec-6] INFO  o.e.c.AnnouncementsController - 查询所有公告
+2025-07-01 13:46:34 [SpringApplicationShutdownHook] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-07-01 13:46:34 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-07-01 13:46:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-07-01 13:46:34 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

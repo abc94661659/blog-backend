@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.mapper.StatisticsMapper">
+
+    <select id="selectStatistics" resultType="org.example.entity.Statistics">
+        SELECT * FROM statistics
+    </select>
+    <update id="updateStatistics" parameterType="org.example.entity.Statistics">
+        UPDATE statistics
+        SET total_articles = #{totalArticles},
+            total_users = #{totalUsers},
+            update_time = NOW()
+        WHERE id = #{id}
+    </update>
+</mapper>

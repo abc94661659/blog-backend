@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.mapper.UserMapper">
+
+    <insert id="insert" useGeneratedKeys="true" keyProperty="id">
+        insert into user (username, password, email, avatar)
+        values
+        (#{username},#{password},#{email},#{avatar})
+    </insert>
+
+    <select id="selectByUsernameAndPassword" resultType="org.example.entity.User">
+        select * from user WHERE (binary username = #{username} OR email = #{email}) AND password = #{password}
+    </select>
+
+    <select id="selectById" resultType="org.example.entity.User">
+        select id,username,email,avatar,role,create_time,update_time  from user where id=#{id}
+    </select>
+
+    <update id="update">
+            update user
+            <set>
+                <if test="username != null">username = #{username},</if>
+                <if test="avatar != null">avatar = #{avatar},</if>
+                <if test="password != null">password = #{password},</if>
+                update_time = NOW()
+            </set>
+            where id = #{id}
+    </update>
+
+    <delete id="deleteById">
+        delete from user where id=#{id}
+    </delete>
+
+    <update id="updatePassword">
+        update user set password = #{password} where (binary username = #{username} OR email = #{email})
+
+    </update>
+
+    <select id="selectByUsernameOrEmail" resultType="org.example.entity.User">
+        select * from user where (binary username = #{username} OR email = #{email})
+    </select>
+
+    <select id="selectAllUsers" resultType="org.example.entity.User">
+        SELECT * FROM user
+    </select>
+
+    <select id="selectByUsername" resultType="org.example.entity.User">
+        SELECT * FROM user WHERE binary username = #{username}
+    </select>
+
+    <select id="selectByEmail" resultType="boolean">
+        <!--        查询邮箱是否存在-->
+        SELECT EXISTS(SELECT 1 FROM user WHERE email = #{email})
+    </select>
+
+    <select id="selectAdmin" resultType="org.example.entity.User">
+        select * from user where role = 'ROLE_ADMIN'
+    </select>
+
+</mapper>
